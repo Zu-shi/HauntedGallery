@@ -7,6 +7,8 @@ Project("{E030C5A5-5EC5-99C7-956E-D48D83442900}") = "HauntedGallery", "Assembly-
 EndProject
 Project("{E030C5A5-5EC5-99C7-956E-D48D83442900}") = "HauntedGallery", "Assembly-CSharp-Editor.csproj", "{750CA0FA-45A2-704A-0B7F-340C07F007C0}"
 EndProject
+Project("{E030C5A5-5EC5-99C7-956E-D48D83442900}") = "HauntedGallery", "Assembly-UnityScript-firstpass.unityproj", "{FA04C103-10AA-6A7B-E3E6-291912C6024E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,11 +27,15 @@ Global
 		{750CA0FA-45A2-704A-0B7F-340C07F007C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{750CA0FA-45A2-704A-0B7F-340C07F007C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{750CA0FA-45A2-704A-0B7F-340C07F007C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA04C103-10AA-6A7B-E3E6-291912C6024E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA04C103-10AA-6A7B-E3E6-291912C6024E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA04C103-10AA-6A7B-E3E6-291912C6024E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA04C103-10AA-6A7B-E3E6-291912C6024E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-					GlobalSection(MonoDevelopProperties) = preSolution
+									GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
