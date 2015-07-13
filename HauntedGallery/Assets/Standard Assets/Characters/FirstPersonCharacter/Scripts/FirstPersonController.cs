@@ -100,8 +100,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			//Vector3 desiredMove = transform.forward*m_Input.y + transform.right*m_Input.x;
 
 			//Move the character only in the Z direction
-			Vector3 desiredMove = new Vector3(0f, 0f, m_Input.y);
-
+			//Vector3 desiredMove = new Vector3(0f, 0f, m_Input.y);
+			Vector3 desiredMove = transform.forward*m_Input.y + transform.right*m_Input.x;
+			desiredMove = new Vector3(0f, 0f, desiredMove.z);
             // get a normal for the surface that is being touched to move along it
             RaycastHit hitInfo;
             Physics.SphereCast(transform.position, m_CharacterController.radius, Vector3.down, out hitInfo,
@@ -116,6 +117,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 m_MoveDir.y = -m_StickToGroundForce;
 
+				/*
                 if (m_Jump)
                 {
                     m_MoveDir.y = m_JumpSpeed;
@@ -123,6 +125,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     m_Jump = false;
                     m_Jumping = true;
                 }
+                */
+
             }
             else
             {

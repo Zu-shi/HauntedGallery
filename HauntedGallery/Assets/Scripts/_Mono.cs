@@ -8,6 +8,7 @@ using System.Collections;
 public class _Mono : MonoBehaviour {
 
 	private SpriteRenderer _spriteRenderer;
+	private MeshRenderer _meshRenderer;
 
 	public float x {
 		set {
@@ -151,6 +152,21 @@ public class _Mono : MonoBehaviour {
 			else return 0;
 		}
 	}
+	/*
+	public float meshAlpha {
+		set {
+			if(meshRenderer != null){
+				Color _color = meshRenderer.color;
+				meshRenderer.color = new Color(_color.r, _color.g, _color.b, value); 
+			}
+		}
+		get {
+			if(meshRenderer != null){
+				return meshRenderer.material .a;
+			}
+			else return 0;
+		}
+	}*/
 
 	public float guiAlpha {
 		set {
@@ -182,15 +198,24 @@ public class _Mono : MonoBehaviour {
         }
     }
 
-public SpriteRenderer spriteRenderer{
-	get{
-		if(_spriteRenderer == null){
-			_spriteRenderer = GetComponent<SpriteRenderer>();
+	public SpriteRenderer spriteRenderer{
+		get{
+			if(_spriteRenderer == null){
+				_spriteRenderer = GetComponent<SpriteRenderer>();
+			}
+			return _spriteRenderer;
 		}
-		return _spriteRenderer;
 	}
-}
 
+	public MeshRenderer meshRenderer{
+		get{
+			if(_meshRenderer == null){
+				_meshRenderer = GetComponent<MeshRenderer>();
+			}
+			return _meshRenderer;
+		}
+	}
+	
 	public void Destroy(){
 		Destroy (this.gameObject);
 	}
