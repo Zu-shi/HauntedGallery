@@ -48,7 +48,10 @@
   <ItemGroup>
      <Compile Include="Assets\KnifePickupScript.cs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
      <Compile Include="Assets\PressEnterToStartGame.cs" />
+=======
+>>>>>>> 9219998ffcd47c9d4abcb938a28e2d2a6e563179
 =======
 >>>>>>> 9219998ffcd47c9d4abcb938a28e2d2a6e563179
      <Compile Include="Assets\ReportSize.cs" />
@@ -60,7 +63,10 @@
      <Compile Include="Assets\Scripts\PictureManager.cs" />
      <Compile Include="Assets\Scripts\_Mono.cs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
      <Compile Include="Assets\gotoGame.cs" />
+=======
+>>>>>>> 9219998ffcd47c9d4abcb938a28e2d2a6e563179
 =======
 >>>>>>> 9219998ffcd47c9d4abcb938a28e2d2a6e563179
      <None Include="Assets\DOTween\readme.txt" />
